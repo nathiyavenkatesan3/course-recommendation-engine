@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Course Recommendation</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Personalized Course Recommendation</h1>
+
+        <p>
+            Find the best courses based on your skills and interests.
+        </p>
+
+        <form action="/recommend" method="POST">
+
+            <!-- Student Name -->
+            <label>Your Name</label>
+            <input type="text"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <!-- Domain -->
+            <label>Select Your Domain</label>
+
+            <select name="domain" required>
+
+                <option value="">-- Select Domain --</option>
+
+                <option value="Artificial Intelligence">
+                    Artificial Intelligence
+                </option>
+
+                <option value="Data Science">
+                    Data Science
+                </option>
+
+                <option value="Web Development">
+                    Web Development
+                </option>
+
+                <option value="Programming">
+                    Programming
+                </option>
+
+                <option value="IoT">
+                    IoT
+                </option>
+
+                <option value="Cyber Security">
+                    Cyber Security
+                </option>
+
+                <option value="Cloud Computing">
+                    Cloud Computing
+                </option>
+
+                <option value="Design">
+                    Design
+                </option>
+
+                <option value="Mobile Development">
+                    Mobile Development
+                </option>
+
+            </select>
+
+
+            <!-- Skill Level -->
+            <label>Skill Level</label>
+
+            <select name="level" required>
+
+                <option value="">-- Select Level --</option>
+
+                <option value="Beginner">
+                    Beginner
+                </option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+
+            <!-- Skills -->
+            <label>Your Skills</label>
+
+            <input type="text"
+                   name="skills"
+                   placeholder="Example: Python, Java, HTML"
+                   required>
+
+
+            <!-- Duration -->
+            <label>Preferred Duration</label>
+
+            <select name="duration" required>
+
+                <option value="">-- Select Duration --</option>
+
+                <option value="1">
+                    1 Month
+                </option>
+
+                <option value="2">
+                    2 Months
+                </option>
+
+                <option value="3">
+                    3 Months
+                </option>
+
+                <option value="6">
+                    6 Months
+                </option>
+
+            </select>
+
+
+            <!-- Submit -->
+            <button type="submit">
+                Get Recommendations
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
