@@ -1,0 +1,21 @@
+course,domain,skills,level,duration,rating
+Python Basics,Programming,Python,Beginner,2,4.5
+Advanced Python,Programming,Python,Advanced,3,4.7
+Java Programming,Programming,Java,Beginner,3,4.4
+Web Development,Web Development,HTML CSS JavaScript,Beginner,3,4.6
+Advanced Web Development,Web Development,HTML CSS JavaScript React,Advanced,4,4.8
+Data Science with Python,Data Science,Python Statistics Pandas,Intermediate,4,4.8
+Data Analytics,Data Science,Python Excel SQL,Beginner,3,4.5
+Machine Learning,Artificial Intelligence,Python Machine Learning,Intermediate,4,4.7
+Deep Learning,Artificial Intelligence,Python Deep Learning,Advanced,5,4.9
+Artificial Intelligence Basics,Artificial Intelligence,Python AI,Beginner,3,4.6
+Natural Language Processing,Artificial Intelligence,Python NLP,Advanced,4,4.8
+IoT Fundamentals,IoT,Arduino Sensors IoT,Beginner,2,4.4
+Advanced IoT,IoT,Arduino ESP32 IoT,Intermediate,4,4.7
+Cyber Security Basics,Cyber Security,Networking Security,Beginner,3,4.5
+Ethical Hacking,Cyber Security,Linux Networking Security,Advanced,4,4.8
+Cloud Computing,Cloud Computing,AWS Linux Networking,Intermediate,3,4.6
+DevOps Fundamentals,Cloud Computing,Docker Git Linux,Intermediate,3,4.7
+UI UX Design,Design,Figma UI UX,Beginner,2,4.5
+Graphic Design,Design,Photoshop Design,Beginner,2,4.4
+Mobile App Development,Mobile Development,Flutter Dart,Intermediate,4,4.7
