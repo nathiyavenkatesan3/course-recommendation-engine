@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommended Courses</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎯 Recommended Courses</h1>
+
+        <p>
+            Based on your skills and preferences,
+            these courses are recommended for you.
+        </p>
+
+        {% if courses %}
+
+            {% for course in courses %}
+
+                <div class="course-card">
+
+                    <h2>{{ course.course }}</h2>
+
+                    <p>
+                        <strong>Domain:</strong>
+                        {{ course.domain }}
+                    </p>
+
+                    <p>
+                        <strong>Skills:</strong>
+                        {{ course.skills }}
+                    </p>
+
+                    <p>
+                        <strong>Level:</strong>
+                        {{ course.level }}
+                    </p>
+
+                    <p>
+                        <strong>Duration:</strong>
+                        {{ course.duration }} months
+                    </p>
+
+                    <p>
+                        <strong>Rating:</strong>
+                        ⭐ {{ course.rating }}
+                    </p>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p>No matching courses found.</p>
+
+        {% endif %}
+
+
+        <a href="/">
+            <button type="button">
+                🔄 Try Again
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
